@@ -389,7 +389,7 @@ async function  currentime(){
    timeDisplay.innerHTML = time;
    wordInput.addEventListener("input", startMatch);
 }
-currentime();
+
 
 
 
@@ -426,6 +426,7 @@ async function init() {
   wordInput.addEventListener("input", startMatch);
   // setInterval(countdownStart, 1000);
  button.addEventListener('click' ,(a) => {
+  currentime()
   setInterval(countdownStart, 1000);
   level.setAttribute("disabled", "disabled");
   button.style.display = "none";
